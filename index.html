@@ -12,95 +12,82 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container ">
+          <a class="navbar-brand " href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link " href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
+
 
     
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
+<main class="banner">
+  <div class="banner__text container py-7">
+    <h2 class="text-white fw-bold ">親手打造你的線上博物館</h2>
+    <p class="text-white">你有滿滿的收藏品，卻苦無機會展現給世人看嗎? <br>
+      想辦實體展覽，但又因為成本太高而卻步? <br>
+      沒關係，MYMUSEUM 將協助你一步步打造屬於你的線上博物館!</p>
   </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
+</main>
+<section class="feature container py-6">
+  <ul class="row list-unstyled ">
+    <li class="col-lg-4 d-flex">
+      <div class="card flex-grow-1 ">
+        <div class="ratio ratio-1x1">
+          <img src="./assets/images/feature/feature01.jpg" class="card-img-top object-fit " alt="特色一">
+        </div>
+        <div class="card-body">
+          <p  class="card-text fw-bold">特色一 : 輕鬆架設藏品展示空間 </p>
+          <p  class="card-text fw-light">
+            MYMUSEUM 為低成本架設藏品線上展示空間，再也無須擔心租借不到實體展廳，在家即可立即規劃的藏品展覽。</p>
+        </div>
+      </div>
+    </li>
+    <li class="col-lg-4 d-flex">
+      <div class="card flex-grow-1 ">
+        <div class="ratio ratio-1x1">
+         <img src="./assets/images/feature/feature02.jpg" class="card-img-top object-fit"  alt="特色二">
+        </div>
+        <div class="card-body">
+          <p  class="card-text fw-bold">特色二 : 接受多元化藏品展示  </p>
+          <p  class="card-text fw-light">
+            MYMUSEUM 接受各種不同的藏品展示，無論是平面作品、立體作品、多媒體作品都可作為展示內容。</p>
+        </div>
+      </div>
+    </li>
+    <li class="col-lg-4 d-flex">
+      <div class="card flex-grow-1">
+        <div class="ratio ratio-1x1">
+         <img src="./assets/images/feature/feature03.jpg" class="card-img-top object-fit"  alt="特色三">
+        </div>
+        <div class="card-body">
+          <p  class="card-text fw-bold">特色三: 結合VR、AR提升觀覽體驗</p>
+          <p  class="card-text fw-light">
+            MYMUSEUM 支援VR、AR功能，打破線上展間的隔閡，營造實體展間沉浸感，提升藏家的觀覽體驗。</p>
+        </div>
+      </div>
+    </li>
+  </ul>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+</section>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
     <footer class="footer">
