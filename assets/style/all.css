@@ -13118,4 +13118,13 @@ fieldset:disabled .btn {
   background-size: cover;
 }
 
+.procedure__text {
+  padding: 75px 0;
+}
+
+.procedure__img {
+  width: 638px;
+  height: 425px;
+}
+
 /*# sourceMappingURL=all.css.map */
