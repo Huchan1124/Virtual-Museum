@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap");
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -46,7 +47,7 @@
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-rgb: 33, 37, 41;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: system-ui, -apple-system, "Noto Sans TC", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -2386,7 +2387,13 @@ progress {
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-  font-size: 1.25rem;
+  font-size: calc(1.425rem + 2.1vw);
+}
+
+@media (min-width: 1200px) {
+  .col-form-label-lg {
+    font-size: 3rem;
+  }
 }
 
 .col-form-label-sm {
@@ -2585,8 +2592,14 @@ progress {
 .form-control-lg {
   min-height: calc(1.5em + 1rem + 2px);
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: calc(1.425rem + 2.1vw);
   border-radius: 0.3rem;
+}
+
+@media (min-width: 1200px) {
+  .form-control-lg {
+    font-size: 3rem;
+  }
 }
 
 .form-control-lg::file-selector-button {
@@ -2701,7 +2714,13 @@ textarea.form-control-lg {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
-  font-size: 1.25rem;
+  font-size: calc(1.425rem + 2.1vw);
+}
+
+@media (min-width: 1200px) {
+  .form-select-lg {
+    font-size: 3rem;
+  }
 }
 
 .form-check {
@@ -3113,8 +3132,17 @@ textarea.form-control-lg {
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: calc(1.425rem + 2.1vw);
   border-radius: 0.3rem;
+}
+
+@media (min-width: 1200px) {
+  .input-group-lg > .form-control,
+  .input-group-lg > .form-select,
+  .input-group-lg > .input-group-text,
+  .input-group-lg > .btn {
+    font-size: 3rem;
+  }
 }
 
 .input-group-sm > .form-control,
@@ -4012,8 +4040,14 @@ fieldset:disabled .btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: calc(1.425rem + 2.1vw);
   border-radius: 0.3rem;
+}
+
+@media (min-width: 1200px) {
+  .btn-lg, .btn-group-lg > .btn {
+    font-size: 3rem;
+  }
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -4683,12 +4717,18 @@ fieldset:disabled .btn {
 }
 
 .navbar-brand {
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-top: -1rem;
+  padding-bottom: -1rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: calc(1.425rem + 2.1vw);
   text-decoration: none;
   white-space: nowrap;
+}
+
+@media (min-width: 1200px) {
+  .navbar-brand {
+    font-size: 3rem;
+  }
 }
 
 .navbar-nav {
@@ -4731,7 +4771,7 @@ fieldset:disabled .btn {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: calc(1.425rem + 2.1vw);
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -4741,6 +4781,12 @@ fieldset:disabled .btn {
   -o-transition: box-shadow 0.15s ease-in-out;
   transition: box-shadow 0.15s ease-in-out;
   transition: box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+@media (min-width: 1200px) {
+  .navbar-toggler {
+    font-size: 3rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -5743,7 +5789,13 @@ fieldset:disabled .btn {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: 1.25rem;
+  font-size: calc(1.425rem + 2.1vw);
+}
+
+@media (min-width: 1200px) {
+  .pagination-lg .page-link {
+    font-size: 3rem;
+  }
 }
 
 .pagination-lg .page-item:first-child .page-link {
@@ -9096,6 +9148,10 @@ fieldset:disabled .btn {
 
 .fs-6 {
   font-size: 1rem !important;
+}
+
+.fs-lg {
+  font-size: calc(1.425rem + 2.1vw) !important;
 }
 
 .fst-italic {
@@ -13065,6 +13121,9 @@ fieldset:disabled .btn {
   }
   .fs-4 {
     font-size: 1.5rem !important;
+  }
+  .fs-lg {
+    font-size: 3rem !important;
   }
 }
 
