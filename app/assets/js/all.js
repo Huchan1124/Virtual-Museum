@@ -1,5 +1,7 @@
 //AOS
-AOS.init();
+AOS.init({
+  once: true,
+});
 
 
 // swiper
