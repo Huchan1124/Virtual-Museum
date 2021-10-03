@@ -13289,6 +13289,10 @@ fieldset:disabled .btn {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 .object-fit {
   -o-object-fit: cover;
      object-fit: cover;

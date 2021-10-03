@@ -1,7 +1,9 @@
 "use strict";
 
 //AOS
-AOS.init(); // swiper
+AOS.init({
+  once: true
+}); // swiper
 
 var swiper = new Swiper(".userResponseSwiper", {
   navigation: {
